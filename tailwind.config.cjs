@@ -37,6 +37,11 @@ module.exports = {
 			fontFamily: {
 				"ibarra" : ["Ibarra Real Nova", "serif"],
 				"public": ["Public Sans", "sans-serif"],
+			},
+			screens: {
+				mobile: '23.4375em',
+				tablet: '48em',
+				desktop: '90em',
 			}
 		},
 	},
