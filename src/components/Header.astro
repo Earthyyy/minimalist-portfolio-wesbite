@@ -37,27 +37,19 @@ const { current } = Astro.props;
                     <li>
                         <a
                             href="/"
-                            class={`${
-                                current === "Home" ? "text-primary-cyan" : ""
-                            } `}>Home</a
+                            class=''>Home</a
                         >
                     </li>
                     <li>
                         <a
                             href="/portfolio"
-                            class={`${
-                                current === "Portfolio"
-                                    ? "text-primary-cyan"
-                                    : ""
-                            } `}>Portfolio</a
+                            class=''>Portfolio</a
                         >
                     </li>
                     <li class="w-max">
                         <a
                             href="/contact-me"
-                            class={`${
-                                current === "Contact" ? "text-primary-cyan" : ""
-                            } `}>Contact me</a
+                            class=''>Contact me</a
                         >
                     </li>
                 </ul>
@@ -66,17 +58,16 @@ const { current } = Astro.props;
     </div>
 </header>
 
+
+<!-- TODO: Refactor this code into Tailwind Utility classes -->
 <style>
     .menu {
-        
         transform: rotateX(-90deg);
         transform-origin: top center;
         opacity: 0.3;
         transition: 280ms all ease-out;
     }
 
-
-    .dropdown:hover .menu,
     .dropdown:focus-within .menu {
         display: flex;
         flex-direction: column;
