@@ -1,10 +1,49 @@
 ---
 import Header from "../components/Header.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-
+import Button from "../components/Button.astro";
 ---
 
 <BaseLayout>
 	<Header current={'Home'}/>
-	<h1>Hello, Astro!</h1>
+	<main class="flex justify-center max-w-[69.4375rem] px-8 desktop:px-0">
+		<section id="hero" class="flex-1 flex flex-col gap-6 relative">
+			<!-- <picture class="h-[271px] w-[311px]">
+				<source media="(max-width: 1440px)" srcset="/assets/homepage/desktop/image-homepage-hero.jpg" />
+				<source media="(min-width: 768px)" srcset="/assets/homepage/tablet/image-homepage-hero.jpg" />
+			</picture> -->
+			<img 
+			src="/assets/homepage/mobile/image-homepage-hero@2x.jpg"
+			alt="manage landing page" class="tablet:hidden"
+			 />
+
+
+			<img 
+			src="/assets/homepage/tablet/image-homepage-hero@2x.jpg"
+			alt="manage landing page" class="hidden tablet:block desktop:hidden"
+			 />
+
+			
+			<img 
+			src="/assets/homepage/desktop/image-homepage-hero@2x.jpg"
+			alt="manage landing page" class="hidden desktop:block"
+			 />
+
+			
+			
+			  <div class="flex flex-col gap-6 tablet:gap-12 desktop:gap-[3.3125rem] tablet:absolute tablet:bottom-0 tablet:left-0 tablet:bg-neutral-white tablet:w-[75%] tablet:pt-14 tablet:pr-14 desktop:w-[40%]">
+				<h2 class="font-ibarra font-bold text-[2.5rem]/[2.625rem] tracking-[-0.36px] desktop:text-[3.125rem]/[3.125rem]">
+					Hey, I’m Alex Spencer and I love building beautiful websites
+				</h2>
+
+
+				<Button/>
+
+
+
+
+			  </div>
+			  
+		</section>
+	</main>
 </BaseLayout>
