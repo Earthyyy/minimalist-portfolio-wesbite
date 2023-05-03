@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .heading {
+    @apply font-ibarra font-bold text-[2.5rem]/[2.625rem] tracking-[-0.36px] desktop:text-[3.125rem]/[3.125rem];
+  }
+  .subheading {
+    @apply font-ibarra font-bold text-[2.5rem]/[2.625rem] tracking-[-0.36px];
+  }
+
+  .paragraph {
+    @apply font-public text-base/[1.875rem] text-primary-grayishDarkBlue font-normal;
+  }
+}
+
 
 
 /* Josh Comeau CSS Reset*/

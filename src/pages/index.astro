@@ -5,45 +5,116 @@ import Button from "../components/Button.astro";
 ---
 
 <BaseLayout>
-	<Header current={'Home'}/>
-	<main class="flex justify-center max-w-[69.4375rem] px-8 desktop:px-0">
+	<Header current={"Home"} />
+	<main
+		class="flex flex-col gap-24 justify-center max-w-[69.4375rem] px-8 desktop:px-0"
+	>
 		<section id="hero" class="flex-1 flex flex-col gap-6 relative">
 			<!-- <picture class="h-[271px] w-[311px]">
 				<source media="(max-width: 1440px)" srcset="/assets/homepage/desktop/image-homepage-hero.jpg" />
 				<source media="(min-width: 768px)" srcset="/assets/homepage/tablet/image-homepage-hero.jpg" />
 			</picture> -->
-			<img 
-			src="/assets/homepage/mobile/image-homepage-hero@2x.jpg"
-			alt="manage landing page" class="tablet:hidden"
-			 />
+			<img
+				src="/assets/homepage/mobile/image-homepage-hero@2x.jpg"
+				alt="manage landing page"
+				class="tablet:hidden"
+			/>
 
+			<img
+				src="/assets/homepage/tablet/image-homepage-hero@2x.jpg"
+				alt="manage landing page"
+				class="hidden tablet:block desktop:hidden"
+			/>
 
-			<img 
-			src="/assets/homepage/tablet/image-homepage-hero@2x.jpg"
-			alt="manage landing page" class="hidden tablet:block desktop:hidden"
-			 />
+			<img
+				src="/assets/homepage/desktop/image-homepage-hero@2x.jpg"
+				alt="manage landing page"
+				class="hidden desktop:block"
+			/>
 
-			
-			<img 
-			src="/assets/homepage/desktop/image-homepage-hero@2x.jpg"
-			alt="manage landing page" class="hidden desktop:block"
-			 />
-
-			
-			
-			  <div class="flex flex-col gap-6 tablet:gap-12 desktop:gap-[3.3125rem] tablet:absolute tablet:bottom-0 tablet:left-0 tablet:bg-neutral-white tablet:w-[75%] tablet:pt-14 tablet:pr-14 desktop:w-[40%]">
-				<h2 class="font-ibarra font-bold text-[2.5rem]/[2.625rem] tracking-[-0.36px] desktop:text-[3.125rem]/[3.125rem]">
+			<div
+				class="flex flex-col gap-6 tablet:gap-12 desktop:gap-[3.3125rem] tablet:absolute tablet:bottom-0 tablet:left-0 tablet:bg-neutral-white tablet:w-[75%] tablet:pt-14 tablet:pr-14 desktop:w-[40%]"
+			>
+				<h1 class="heading">
 					Hey, I’m Alex Spencer and I love building beautiful websites
-				</h2>
+				</h1>
 
+				<Button />
+			</div>
+		</section>
 
-				<Button/>
+		<section id="about" class="flex flex-col gap-8">
+			<!-- Image Section -->
 
+			<!-- TODO: Refactor this code to a ResponsiveImage Component -->
+			<img
+				src="/assets/homepage/mobile/image-homepage-profile@2x.jpg"
+				alt="Spencer's profile picture"
+				class="tablet:hidden"
+			/>
 
+			<img
+				src="/assets/homepage/tablet/image-homepage-profile@2x.jpg"
+				alt="manage landing page"
+				class="hidden tablet:block desktop:hidden"
+			/>
 
+			<img
+				src="/assets/homepage/desktop/image-homepage-profile@2x.jpg"
+				alt="manage landing page"
+				class="hidden desktop:block"
+			/>
 
-			  </div>
-			  
+			
+			<!-- Details Section -->
+			
+			<div class="grid gap-7">
+
+				<hr/>
+
+				<div class="grid gap-7">
+					<h2 class="subheading">About Me</h2>
+					<p class="paragraph">
+						I’m a junior front-end developer looking for a new role in
+						an exciting company. I focus on writing accessible HTML,
+						using modern CSS practices and writing clean JavaScript.
+						When writing JavaScript code, I mostly use React, but I can
+						adapt to whatever tools are required. I’m based in London,
+						UK, but I’m happy working remotely and have experience in
+						remote teams. When I’m not coding, you’ll find me outdoors.
+						I love being out in nature whether that’s going for a walk,
+						run or cycling. I’d love you to check out my work.
+					</p>
+				</div>
+			<a
+				href="/portfolio"
+				class="flex items-center justify-center self-start relative w-[12.5rem] h-12 border border-primary-grayishDarkBlue group hover:bg-primary-grayishDarkBlue transition-colors duration-200"
+			>
+				<span
+					class="uppercase font-normal font-public tracking-[2px] text-primary-grayishDarkBlue text-xs/[.88125rem] group-hover:text-neutral-white -mt-1"
+				>
+					Go to portfolio
+				</span>
+			</a>
+
+			<hr/>
+
+			</div>
+		</section>
+
+		<section id="contact" class="flex flex-col items-center tablet:justify-between tablet:flex-row gap-10 tablet:gap-0 mb-20">
+			<h2 class="subheading text-center tablet:text-left max-w-[21.875rem]">Interested in doing a project together?</h2>
+
+			<a
+				href="/portfolio"
+				class="flex items-center justify-center relative w-[10.125rem] h-12 border border-primary-grayishDarkBlue group hover:bg-primary-grayishDarkBlue transition-colors duration-200 "
+			>
+				<span
+					class="uppercase font-normal font-public tracking-[2px] text-primary-grayishDarkBlue text-xs/[.88125rem] group-hover:text-neutral-white -mt-1 text-center"
+				>
+					Contact Me
+				</span>
+			</a>
 		</section>
 	</main>
 </BaseLayout>
