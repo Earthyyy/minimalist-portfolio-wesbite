@@ -42,6 +42,10 @@ module.exports = {
 				mobile: '23.4375em',
 				tablet: '48em',
 				desktop: '70em',
+			},
+			gridTemplateColumns: {
+				aboutTablet: '17.5625rem 1fr',
+				aboutDesktop: '33.75rem 1fr',
 			}
 		},
 	},
