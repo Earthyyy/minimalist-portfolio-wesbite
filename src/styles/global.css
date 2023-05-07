@@ -15,6 +15,18 @@
   .paragraph {
     @apply font-public text-base/[1.875rem] text-primary-grayishDarkBlue font-normal;
   }
+
+  .label {
+    @apply font-public text-[0.8125rem]/[1.875rem] opacity-80 text-primary-grayishDarkBlue font-bold;
+  }
+
+  .input-text {
+    @apply font-public text-[0.8125rem]/[1.875rem] text-primary-grayishDarkBlue font-normal placeholder:opacity-40;
+  }
+
+  .input-field {
+    @apply input-text py-2 px-4  bg-primary-grayishDarkBlue bg-opacity-10 border focus:outline-none focus:border-primary-cyan invalid:border-secondary-brightRed
+  }
 }
 
 
