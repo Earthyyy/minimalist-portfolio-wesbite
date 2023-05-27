@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Button from "../components/Button.astro";
+import ResponsiveImage from "../components/ResponsiveImage.astro";
 ---
 
 <BaseLayout>
@@ -43,20 +44,11 @@ import Button from "../components/Button.astro";
       id="about"
       class="flex flex-col tablet:flex-row tablet:justify-between gap-8 tablet:grid tablet:grid-cols-aboutTablet tablet:gap-16 tablet:place-items-center desktop:grid-cols-aboutDesktop desktop:gap-32"
     >
-      <picture>
-        <source
-          media="(min-width: 70em)"
-          srcset="/assets/homepage/desktop/image-homepage-profile@2x.jpg"
-        />
-        <source
-          media="(min-width: 48em)"
-          srcset="/assets/homepage/tablet/image-homepage-profile@2x.jpg"
-        />
-        <img
-          src="/assets/homepage/mobile/image-homepage-profile@2x.jpg"
-          alt="Spencer's profile picture"
-        />
-      </picture>
+      <ResponsiveImage
+        page="homepage"
+        imgName="image-homepage-profile"
+        alt="Spencer's profile picture"
+      />
 
       <div class="grid gap-7 desktop:gap-[3.125rem]">
         <hr />
