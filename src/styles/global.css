@@ -6,14 +6,18 @@
 
 @layer components {
   .heading {
-    @apply font-ibarra font-bold text-[2.5rem]/[2.625rem] tracking-[-0.36px] desktop:text-[3.125rem]/[3.125rem];
+    @apply font-ibarra font-bold text-[2.5rem]/[2.625rem] tracking-[-0.36px] desktop:text-[3.125rem]/[3.125rem] text-primary-grayishDarkBlue;
+  }
+
+  .heading-normal {
+    @apply font-ibarra font-normal text-[2rem]/[2.625rem] tracking-[-0.29px] text-primary-grayishDarkBlue;
   }
   .subheading {
-    @apply font-ibarra font-bold text-[2.5rem]/[2.625rem] tracking-[-0.36px];
+    @apply font-ibarra font-bold text-[2.5rem]/[2.625rem] tracking-[-0.36px] text-primary-grayishDarkBlue;
   }
 
   .paragraph {
-    @apply font-public text-base/[1.875rem] text-primary-grayishDarkBlue font-normal;
+    @apply font-public text-[0.9375rem]/[1.875rem] text-primary-grayishDarkBlue font-normal;
   }
 
   .label {
@@ -26,6 +30,10 @@
 
   .input-field {
     @apply input-text py-2 px-4  bg-primary-grayishDarkBlue bg-opacity-10 border focus:outline-none focus:border-primary-cyan invalid:border-secondary-brightRed
+  }
+
+  .small {
+    @apply font-public text-base/[1.875rem] text-primary-grayishDarkBlue font-normal opacity-50;
   }
 }
 

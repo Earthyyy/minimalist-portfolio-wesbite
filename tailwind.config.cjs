@@ -46,7 +46,11 @@ module.exports = {
 			gridTemplateColumns: {
 				aboutTablet: '17.5625rem 1fr',
 				aboutDesktop: '33.75rem 1fr',
-				contactDesktop: '4fr 6fr'
+				contactDesktop: '4fr 6fr',
+				portfolioDesktop: '350px 1fr',
+			},
+			gridTemplateRows: {
+				portfolioTablet: '42px auto',
 			}
 		},
 	},

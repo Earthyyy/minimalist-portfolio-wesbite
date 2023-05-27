@@ -1,0 +1,221 @@
+---
+import Header from "../../components/Header.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Button from "../../components/Button.astro";
+---
+
+<BaseLayout>
+  <Header current={"Portfolio"} />
+  <main
+    class="flex flex-col gap-24 justify-center max-w-[69.4375rem] px-8 desktop:px-0"
+  >
+    <section
+      id="about"
+      class="flex flex-col tablet:flex-row tablet:justify-between gap-8 tablet:grid tablet:grid-cols-aboutTablet tablet:gap-16 tablet:place-items-center desktop:grid-cols-aboutDesktop desktop:gap-32"
+    >
+      <picture>
+        <source
+          media="(min-width: 70em)"
+          srcset="/assets/portfolio/desktop/image-portfolio-manage@2x.jpg"
+        />
+        <source
+          media="(min-width: 48em)"
+          srcset="/assets/portfolio/tablet/image-portfolio-manage@2x.jpg"
+        />
+        <img
+          src="/assets/portfolio/mobile/image-portfolio-manage@2x.jpg"
+          alt="Manage"
+        />
+      </picture>
+
+      <!-- Details Section -->
+
+      <div class="grid gap-7 desktop:gap-[3.125rem]">
+        <hr />
+
+        <div class="grid gap-7">
+          <h2 class="subheading">Manage</h2>
+          <p class="paragraph">
+            This project required me to build a fully responsive landing page to
+            the designs provided. I used HTML5, along with CSS Grid and
+            JavaScript for the areas that required interactivity, such as the
+            testimonial slider.
+          </p>
+        </div>
+        <a
+          href="/portfolio/manage"
+          class="flex items-center justify-center self-start relative w-[12.5rem] h-12 border border-primary-grayishDarkBlue group hover:bg-primary-grayishDarkBlue transition-colors duration-200 -mt-1"
+        >
+          <span
+            class="uppercase font-normal font-public tracking-[2px] text-primary-grayishDarkBlue text-xs/[.88125rem] group-hover:text-neutral-white"
+          >
+            View Project
+          </span>
+        </a>
+
+        <hr />
+      </div>
+    </section>
+    <section
+      id="about"
+      class="flex flex-col tablet:flex-row tablet:justify-between gap-8 tablet:grid tablet:grid-cols-aboutTablet tablet:gap-16 tablet:place-items-center desktop:grid-cols-aboutDesktop desktop:gap-32"
+    >
+      <picture>
+        <source
+          media="(min-width: 70em)"
+          srcset="/assets/portfolio/desktop/image-portfolio-bookmark@2x.jpg"
+        />
+        <source
+          media="(min-width: 48em)"
+          srcset="/assets/portfolio/tablet/image-portfolio-bookmark@2x.jpg"
+        />
+        <img
+          src="/assets/portfolio/mobile/image-portfolio-bookmark@2x.jpg"
+          alt="Bookmark"
+        />
+      </picture>
+
+      <!-- Details Section -->
+
+      <div class="grid gap-7 desktop:gap-[3.125rem]">
+        <hr />
+
+        <div class="grid gap-7">
+          <h2 class="subheading">Bookmark</h2>
+          <p class="paragraph">
+            This project required me to build a fully responsive landing page to
+            the designs provided. I used HTML5, along with CSS Grid and
+            JavaScript for the areas that required interactivity, such as the
+            testimonial slider.
+          </p>
+        </div>
+        <a
+          href="/portfolio/bookmark"
+          class="flex items-center justify-center self-start relative w-[12.5rem] h-12 border border-primary-grayishDarkBlue group hover:bg-primary-grayishDarkBlue transition-colors duration-200 -mt-1"
+        >
+          <span
+            class="uppercase font-normal font-public tracking-[2px] text-primary-grayishDarkBlue text-xs/[.88125rem] group-hover:text-neutral-white"
+          >
+            View Project
+          </span>
+        </a>
+
+        <hr />
+      </div>
+    </section>
+    <section
+      id="about"
+      class="flex flex-col tablet:flex-row tablet:justify-between gap-8 tablet:grid tablet:grid-cols-aboutTablet tablet:gap-16 tablet:place-items-center desktop:grid-cols-aboutDesktop desktop:gap-32"
+    >
+      <picture>
+        <source
+          media="(min-width: 70em)"
+          srcset="/assets/portfolio/desktop/image-portfolio-insure@2x.jpg"
+        />
+        <source
+          media="(min-width: 48em)"
+          srcset="/assets/portfolio/tablet/image-portfolio-insure@2x.jpg"
+        />
+        <img
+          src="/assets/portfolio/mobile/image-portfolio-insure@2x.jpg"
+          alt="Insure"
+        />
+      </picture>
+
+      <!-- Details Section -->
+
+      <div class="grid gap-7 desktop:gap-[3.125rem]">
+        <hr />
+
+        <div class="grid gap-7">
+          <h2 class="subheading">Insure</h2>
+          <p class="paragraph">
+            This project required me to build a fully responsive landing page to
+            the designs provided. I used HTML5, along with CSS Grid and
+            JavaScript for the areas that required interactivity, such as the
+            testimonial slider.
+          </p>
+        </div>
+        <a
+          href="/portfolio/insure"
+          class="flex items-center justify-center self-start relative w-[12.5rem] h-12 border border-primary-grayishDarkBlue group hover:bg-primary-grayishDarkBlue transition-colors duration-200 -mt-1"
+        >
+          <span
+            class="uppercase font-normal font-public tracking-[2px] text-primary-grayishDarkBlue text-xs/[.88125rem] group-hover:text-neutral-white"
+          >
+            View Project
+          </span>
+        </a>
+
+        <hr />
+      </div>
+    </section>
+    <section
+      id="about"
+      class="flex flex-col tablet:flex-row tablet:justify-between gap-8 tablet:grid tablet:grid-cols-aboutTablet tablet:gap-16 tablet:place-items-center desktop:grid-cols-aboutDesktop desktop:gap-32"
+    >
+      <picture>
+        <source
+          media="(min-width: 70em)"
+          srcset="/assets/portfolio/desktop/image-portfolio-fylo@2x.jpg"
+        />
+        <source
+          media="(min-width: 48em)"
+          srcset="/assets/portfolio/tablet/image-portfolio-fylo@2x.jpg"
+        />
+        <img
+          src="/assets/portfolio/mobile/image-portfolio-fylo@2x.jpg"
+          alt="Fylo"
+        />
+      </picture>
+
+      <!-- Details Section -->
+
+      <div class="grid gap-7 desktop:gap-[3.125rem]">
+        <hr />
+
+        <div class="grid gap-7">
+          <h2 class="subheading">Fylo</h2>
+          <p class="paragraph">
+            This project required me to build a fully responsive landing page to
+            the designs provided. I used HTML5, along with CSS Grid and
+            JavaScript for the areas that required interactivity, such as the
+            testimonial slider.
+          </p>
+        </div>
+        <a
+          href="/portfolio/fylo"
+          class="flex items-center justify-center self-start relative w-[12.5rem] h-12 border border-primary-grayishDarkBlue group hover:bg-primary-grayishDarkBlue transition-colors duration-200 -mt-1"
+        >
+          <span
+            class="uppercase font-normal font-public tracking-[2px] text-primary-grayishDarkBlue text-xs/[.88125rem] group-hover:text-neutral-white"
+          >
+            View Project
+          </span>
+        </a>
+
+        <hr />
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="flex flex-col items-center tablet:justify-between tablet:flex-row gap-10 tablet:gap-0 mb-20"
+    >
+      <h2 class="subheading text-center tablet:text-left max-w-[21.875rem]">
+        Interested in doing a project together?
+      </h2>
+
+      <a
+        href="/portfolio"
+        class="flex items-center justify-center relative w-[10.125rem] h-12 border border-primary-grayishDarkBlue group hover:bg-primary-grayishDarkBlue transition-colors duration-200 -mt-1"
+      >
+        <span
+          class="uppercase font-normal font-public tracking-[2px] text-primary-grayishDarkBlue text-xs/[.88125rem] group-hover:text-neutral-white text-center"
+        >
+          Contact Me
+        </span>
+      </a>
+    </section>
+  </main>
+</BaseLayout>
