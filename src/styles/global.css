@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer components {
   .heading {
     @apply font-ibarra font-bold text-[2.5rem]/[2.625rem] tracking-[-0.36px] desktop:text-[3.125rem]/[3.125rem] text-primary-grayishDarkBlue;
