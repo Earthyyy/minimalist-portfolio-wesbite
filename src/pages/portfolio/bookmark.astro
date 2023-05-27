@@ -1,6 +1,6 @@
 ---
 import Header from "../../components/Header.astro";
-import ResponsiveProjectImage from "../../components/ResponsiveProjectImage.astro";
+import ResponsiveImage from "../../components/ResponsiveImage.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
@@ -12,7 +12,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     <section
       class="flex flex-col gap-10 desktop:grid-cols-aboutDesktop desktop:gap-32"
     >
-      <ResponsiveProjectImage
+      <ResponsiveImage
         page="detail"
         imgName="image-bookmark-hero"
         alt="Bookmark preview"
@@ -77,12 +77,12 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
           <h3 class="heading-normal mt-7 mb-10">Static Previews</h3>
 
           <figure class="grid gap-8">
-            <ResponsiveProjectImage
+            <ResponsiveImage
               page="detail"
               imgName="image-bookmark-preview-1"
               alt="Bookmark Desktop preview"
             />
-            <ResponsiveProjectImage
+            <ResponsiveImage
               page="detail"
               imgName="image-bookmark-preview-2"
               alt="Bookmark Mobile preview"

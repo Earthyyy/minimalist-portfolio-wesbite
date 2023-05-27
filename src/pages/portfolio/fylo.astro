@@ -1,6 +1,6 @@
 ---
 import Header from "../../components/Header.astro";
-import ResponsiveProjectImage from "../../components/ResponsiveProjectImage.astro";
+import ResponsiveImage from "../../components/ResponsiveImage.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
@@ -13,7 +13,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
       class="flex flex-col gap-10 desktop:grid-cols-aboutDesktop desktop:gap-32"
     >
       <!-- Picture Section -->
-      <ResponsiveProjectImage
+      <ResponsiveImage
         page="detail"
         imgName="image-fylo-hero"
         alt="Fylo preview"
@@ -78,12 +78,12 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
           <h3 class="heading-normal mt-7 mb-10">Static Previews</h3>
 
           <figure class="grid gap-8">
-            <ResponsiveProjectImage
+            <ResponsiveImage
               page="detail"
               imgName="image-fylo-preview-1"
               alt="Fylo Desktop preview"
             />
-            <ResponsiveProjectImage
+            <ResponsiveImage
               page="detail"
               imgName="image-fylo-preview-2"
               alt="Fylo Mobile preview"
