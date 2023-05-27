@@ -1,0 +1,19 @@
+---
+const { page, imgName, alt } = Astro.props;
+---
+
+<picture>
+  <source
+    media="(min-width: 70em)"
+    srcset={`/assets/${page}/desktop/${imgName}@2x.jpg`}
+  />
+  <source
+    media="(min-width: 48em)"
+    srcset={`/assets/${page}/tablet/${imgName}@2x.jpg`}
+  />
+  <img
+    src={`/assets/${page}/mobile/${imgName}@2x.jpg`}
+    alt={alt}
+    class="w-full"
+  />
+</picture>
