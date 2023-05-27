@@ -1,47 +1,84 @@
-# Astro Starter Kit: Minimal
+# Frontend Mentor - Minimalist portfolio website solution
 
-```
-npm create astro@latest -- --template minimal
-```
+This is a solution to the [Minimalist portfolio website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Table of contents
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## 🚀 Project Structure
+## Overview
 
-Inside of your Astro project, you'll see the following folders and files:
+### The challenge
 
-```
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Users should be able to:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
+- Click the "About Me" call-to-action on the homepage and have the screen scroll down to the next section
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Screenshot
 
-Any static assets, like images, can be placed in the `public/` directory.
+#### Mobile View :
 
-## 🧞 Commands
+![](./mobile-view.png)
 
-All commands are run from the root of the project, from a terminal:
+#### Tablet View :
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+![](./tablet-view.png)
 
-## 👀 Want to learn more?
+#### Desktop View :
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+![](./desktop-view.png)
+
+### Links
+
+- [Solution URL](https://your-solution-url.com)
+- [Live Site URL](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- [Astro](https://astro.build/) - Astro is a new kind of static site builder that delivers lightning-fast performance with modern dev tools.
+- [TailwindCSS](https://tailwindcss.com/) - For styles
+
+### What I learned
+
+- First time I used Astro, it was a good experience. I really liked the way it works. Looking forward to use it in future projects.
+
+- Styling with tailwindCSS is fast, However Developer experience is not that good. Specially, when I left the project for a while and came back to it, I had a hard time figuring out what is going on in the code, and the HTML code looks awful with all the classes. I think I may consider going back to vanilla CSS with BEM convention for my next project.
+
+- Planning before coding is a must. I had to change the HTML structure multiple times during the project, which was a waste of time. Having a kanban board with all the tasks would have been a better approach.
+
+### Continued development
+
+- Learning advanced Grid techniques. Mastering layout design is the key for a faster development.
+
+- Learning more about semantic HTML.
+
+- Learning more about accessibility.
+- Learning about component animation and transitions for a better user experience.
+- Writing a better README file.
+
+## Author
+
+- Frontend Mentor - [@Earthyyy](https://www.frontendmentor.io/profile/Earthyyy)
+- Github - [@Earthyy](https://github.com/Earthyyy)
+
+## Acknowledgments
+
+Big Thanks <3 to :
+
+- [Divize](https://divize.io/)
+- [Kevin Powell](https://www.youtube.com/@KevinPowell)
+- [Codecademy](https://www.codecademy.com)
+- [Frontend Mentor](https://www.frontendmentor.io/)
