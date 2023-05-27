@@ -1,0 +1,150 @@
+---
+import Header from "../../components/Header.astro";
+import ResponsiveProjectImage from "../../components/ResponsiveProjectImage.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <Header current={"Portfolio"} />
+  <main
+    class="flex flex-col gap-8 justify-center max-w-[69.4375rem] px-8 desktop:px-0"
+  >
+    <section
+      class="flex flex-col gap-10 desktop:grid-cols-aboutDesktop desktop:gap-32"
+    >
+      <!-- Picture Section -->
+      <ResponsiveProjectImage
+        page="detail"
+        imgName="image-insure-hero"
+        alt="Insure preview"
+      />
+
+      <!-- END of Picture Section -->
+
+      <div class="desktop:flex items-start gap-[7.8125rem] justify-between">
+        <div class="grid gap-6 desktop:gap-12">
+          <hr />
+          <div
+            class="grid gap-6 tablet:grid-cols-2 tablet:grid-rows-portfolioTablet tablet:gap-y-4 tablet:gap-x-0 desktop:grid-cols-1 desktop:grid-rows-portfolioDesktop desktop:gap-y-6 desktop:gap-x-0"
+          >
+            <h2 class="subheading">Insure</h2>
+            <p class="paragraph">
+              This project required me to build a fully responsive landing page
+              to the designs provided. I used HTML5, along with CSS Grid and
+              JavaScript for the areas that required interactivity, such as the
+              testimonial slider.
+            </p>
+
+            <div>
+              <h4
+                class="font-public text-[0.8125rem]/[1.875rem] font-bold text-primary-cyan"
+              >
+                Interaction Design / Front End Development
+              </h4>
+              <h4
+                class="font-public text-[0.8125rem]/[1.875rem] font-bold text-primary-cyan mb-6 tablet:mb-4"
+              >
+                HTML / CSS / JS
+              </h4>
+
+              <a
+                href=""
+                class="flex items-center justify-center self-start relative w-[12.5rem] h-12 border border-primary-grayishDarkBlue group hover:bg-primary-grayishDarkBlue transition-colors duration-200"
+              >
+                <span
+                  class="uppercase font-normal font-public tracking-[2px] text-primary-grayishDarkBlue text-xs/[.88125rem] group-hover:text-neutral-white"
+                >
+                  Visit Website
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <hr />
+        </div>
+
+        <div class="mt-[2.625rem] desktop:mt-0">
+          <h3 class="heading-normal mb-7">Project Background</h3>
+          <p class="paragraph">
+            This project was a front-end challenge from Frontend Mentor. It’s a
+            platform that enables you to practice building websites to a design
+            and project brief. Each challenge includes mobile and desktop
+            designs to show how the website should look at different screen
+            sizes. Creating these projects has helped me refine my workflow and
+            solve real-world coding problems. I’ve learned something new with
+            each project, helping me to improve and adapt my style.
+          </p>
+
+          <h3 class="heading-normal mt-7 mb-10">Static Previews</h3>
+
+          <figure class="grid gap-8">
+            <ResponsiveProjectImage
+              page="detail"
+              imgName="image-insure-preview-1"
+              alt="Insure Desktop preview"
+            />
+            <ResponsiveProjectImage
+              page="detail"
+              imgName="image-insure-preview-2"
+              alt="Insure Mobile preview"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <nav class="w-full flex border-y-[1px]">
+      <a
+        class="flex-1 flex flex-col justify-start py-6 tablet:flex-row tablet:items-center tablet:gap-8"
+        href=""
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="10"
+          height="16"
+          class="mb-4 tablet:mb-0"
+          ><path fill="none" stroke="#33323D" d="M9 0L1 8l8 8"></path></svg
+        >
+
+        <span class="heading-normal text-left"
+          >Fylo<small class="small block">Previous Project</small></span
+        >
+      </a>
+      <a
+        class="flex-1 flex flex-col items-end border-l-[1px] py-6 tablet:flex-row-reverse tablet:items-center tablet:gap-8"
+        href=""
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="10"
+          height="16"
+          class="mb-4 tablet:mb-0"
+          ><path fill="none" stroke="#33323D" d="M1 0l8 8-8 8"></path></svg
+        >
+        <span class="heading-normal text-right"
+          >Insure<small class="small block">Next Project</small></span
+        >
+      </a>
+    </nav>
+
+    <section
+      id="contact"
+      class="flex flex-col items-center tablet:justify-between tablet:flex-row gap-10 tablet:gap-0 mb-20"
+    >
+      <h2 class="subheading text-center tablet:text-left max-w-[21.875rem]">
+        Interested in doing a project together?
+      </h2>
+
+      <a
+        href="/contact-me"
+        class="flex items-center justify-center relative w-[10.125rem] h-12 border border-primary-grayishDarkBlue group hover:bg-primary-grayishDarkBlue transition-colors duration-200"
+      >
+        <span
+          class="uppercase font-normal font-public tracking-[2px] text-primary-grayishDarkBlue text-xs/[.88125rem] group-hover:text-neutral-white text-center"
+        >
+          Contact Me
+        </span>
+      </a>
+    </section>
+  </main>
+</BaseLayout>
