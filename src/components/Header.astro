@@ -4,76 +4,63 @@ const { current } = Astro.props;
 ---
 
 <header class="w-full p-8 flex tablet:px-10 tablet:pt-16 desktop:px-0">
-    <div
-        class="flex items-center justify-between max-w-[69.4375rem] mx-auto flex-1"
-    >
-        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32"
-            ><path
-                fill="#33323D"
-                fill-rule="evenodd"
-                d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"
-            ></path></svg
+  <div
+    class="flex items-center justify-between max-w-[69.4375rem] mx-auto flex-1"
+  >
+    <a href="/">
+      <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32"
+        ><path
+          fill="#33323D"
+          fill-rule="evenodd"
+          d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"
+        ></path></svg
+      >
+    </a>
+
+    <nav>
+      <Navigation current={current} />
+
+      <div class="dropdown relative tablet:hidden">
+        <button class="toggleBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="13"
+            ><g fill="#33323D" fill-rule="evenodd"
+              ><path d="M0 0h24v1H0zM0 6h24v1H0zM0 12h24v1H0z"></path></g
+            ></svg
+          >
+        </button>
+
+        <ul
+          class="menu absolute py-10 px-[4.0625rem] gap-8 right-0 top-8 bg-primary-grayishDarkBlue text-white uppercase font-public font-normal text-xs tracking-[2px] z-20"
         >
-
-        <nav>
-            <Navigation current={current} />
-
-            <div class="dropdown relative tablet:hidden">
-                <button class="toggleBtn">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="13"
-                        ><g fill="#33323D" fill-rule="evenodd"
-                            ><path d="M0 0h24v1H0zM0 6h24v1H0zM0 12h24v1H0z"
-                            ></path></g
-                        ></svg
-                    >
-                </button>
-
-                <ul
-                    class="menu absolute py-10 px-[4.0625rem] gap-8 right-0 top-8 bg-primary-grayishDarkBlue text-white uppercase font-public font-normal text-xs tracking-[2px] z-20"
-                >
-                    <li>
-                        <a
-                            href="/"
-                            class=''>Home</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="/portfolio"
-                            class=''>Portfolio</a
-                        >
-                    </li>
-                    <li class="w-max">
-                        <a
-                            href="/contact-me"
-                            class=''>Contact me</a
-                        >
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+          <li>
+            <a href="/" class="">Home</a>
+          </li>
+          <li>
+            <a href="/portfolio" class="">Portfolio</a>
+          </li>
+          <li class="w-max">
+            <a href="/contact-me" class="">Contact me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
-
 
 <!-- TODO: Refactor this code into Tailwind Utility classes -->
 <style>
-    .menu {
-        transform: rotateX(-90deg);
-        transform-origin: top center;
-        opacity: 0.3;
-        transition: 280ms all ease-out;
-    }
+  .menu {
+    transform: rotateX(-90deg);
+    transform-origin: top center;
+    opacity: 0.3;
+    transition: 280ms all ease-out;
+  }
 
-    .dropdown:focus-within .menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transform: rotateX(0deg);
-        opacity: 1;
-    }
+  .dropdown:focus-within .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
 </style>
-
