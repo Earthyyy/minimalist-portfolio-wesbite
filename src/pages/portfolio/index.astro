@@ -2,6 +2,7 @@
 import Header from "../../components/Header.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Button from "../../components/Button.astro";
+import ResponsiveProjectImage from "../../components/ResponsiveProjectImage.astro";
 ---
 
 <BaseLayout>
@@ -13,20 +14,11 @@ import Button from "../../components/Button.astro";
       id="about"
       class="flex flex-col tablet:flex-row tablet:justify-between gap-8 tablet:grid tablet:grid-cols-aboutTablet tablet:gap-16 tablet:place-items-center desktop:grid-cols-aboutDesktop desktop:gap-32"
     >
-      <picture>
-        <source
-          media="(min-width: 70em)"
-          srcset="/assets/portfolio/desktop/image-portfolio-manage@2x.jpg"
-        />
-        <source
-          media="(min-width: 48em)"
-          srcset="/assets/portfolio/tablet/image-portfolio-manage@2x.jpg"
-        />
-        <img
-          src="/assets/portfolio/mobile/image-portfolio-manage@2x.jpg"
-          alt="Manage"
-        />
-      </picture>
+      <ResponsiveProjectImage
+        page="portfolio"
+        imgName="image-portfolio-manage"
+        alt="Manage"
+      />
 
       <!-- Details Section -->
 
@@ -60,20 +52,11 @@ import Button from "../../components/Button.astro";
       id="about"
       class="flex flex-col tablet:flex-row tablet:justify-between gap-8 tablet:grid tablet:grid-cols-aboutTablet tablet:gap-16 tablet:place-items-center desktop:grid-cols-aboutDesktop desktop:gap-32"
     >
-      <picture>
-        <source
-          media="(min-width: 70em)"
-          srcset="/assets/portfolio/desktop/image-portfolio-bookmark@2x.jpg"
-        />
-        <source
-          media="(min-width: 48em)"
-          srcset="/assets/portfolio/tablet/image-portfolio-bookmark@2x.jpg"
-        />
-        <img
-          src="/assets/portfolio/mobile/image-portfolio-bookmark@2x.jpg"
-          alt="Bookmark"
-        />
-      </picture>
+      <ResponsiveProjectImage
+        page="portfolio"
+        imgName="image-portfolio-bookmark"
+        alt="Bookmark"
+      />
 
       <!-- Details Section -->
 
@@ -107,20 +90,11 @@ import Button from "../../components/Button.astro";
       id="about"
       class="flex flex-col tablet:flex-row tablet:justify-between gap-8 tablet:grid tablet:grid-cols-aboutTablet tablet:gap-16 tablet:place-items-center desktop:grid-cols-aboutDesktop desktop:gap-32"
     >
-      <picture>
-        <source
-          media="(min-width: 70em)"
-          srcset="/assets/portfolio/desktop/image-portfolio-insure@2x.jpg"
-        />
-        <source
-          media="(min-width: 48em)"
-          srcset="/assets/portfolio/tablet/image-portfolio-insure@2x.jpg"
-        />
-        <img
-          src="/assets/portfolio/mobile/image-portfolio-insure@2x.jpg"
-          alt="Insure"
-        />
-      </picture>
+      <ResponsiveProjectImage
+        page="portfolio"
+        imgName="image-portfolio-insure"
+        alt="Insure"
+      />
 
       <!-- Details Section -->
 
@@ -154,20 +128,11 @@ import Button from "../../components/Button.astro";
       id="about"
       class="flex flex-col tablet:flex-row tablet:justify-between gap-8 tablet:grid tablet:grid-cols-aboutTablet tablet:gap-16 tablet:place-items-center desktop:grid-cols-aboutDesktop desktop:gap-32"
     >
-      <picture>
-        <source
-          media="(min-width: 70em)"
-          srcset="/assets/portfolio/desktop/image-portfolio-fylo@2x.jpg"
-        />
-        <source
-          media="(min-width: 48em)"
-          srcset="/assets/portfolio/tablet/image-portfolio-fylo@2x.jpg"
-        />
-        <img
-          src="/assets/portfolio/mobile/image-portfolio-fylo@2x.jpg"
-          alt="Fylo"
-        />
-      </picture>
+      <ResponsiveProjectImage
+        page="portfolio"
+        imgName="image-portfolio-fylo"
+        alt="Fylo"
+      />
 
       <!-- Details Section -->
 
