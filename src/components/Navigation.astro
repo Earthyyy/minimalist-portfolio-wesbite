@@ -1,10 +1,38 @@
 ---
-const {current} = Astro.props
+const { current } = Astro.props;
 ---
 
-
-<ul class="hidden md:flex uppercase gap-[2.625rem] font-public font-normal text-xs tracking-[2px]">
-    <li><a href="/" class={`${current === 'Home' ? 'text-primary-cyan' : ''} `}>Home</a></li>
-    <li><a href="/portfolio" class={`${current === 'Portfolio' ? 'text-primary-cyan' : ''} `}>Portfolio</a></li>
-    <li><a href="/contact-me" class={`${current === 'Contact' ? 'text-primary-cyan' : ''} `}>Contact me</a></li>
+<ul
+  class="hidden md:flex uppercase gap-[2.625rem] font-public font-normal text-xs tracking-[2px]"
+>
+  <li>
+    <a
+      href="/"
+      class={`${
+        current === "Home"
+          ? "text-primary-cyan"
+          : "text-primary-grayishDarkBlue"
+      } `}>Home</a
+    >
+  </li>
+  <li>
+    <a
+      href="/portfolio"
+      class={`${
+        current === "Portfolio"
+          ? "text-primary-cyan"
+          : "text-primary-grayishDarkBlue"
+      } `}>Portfolio</a
+    >
+  </li>
+  <li>
+    <a
+      href="/contact-me"
+      class={`${
+        current === "Contact"
+          ? "text-primary-cyan"
+          : "text-primary-grayishDarkBlue"
+      } `}>Contact me</a
+    >
+  </li>
 </ul>
